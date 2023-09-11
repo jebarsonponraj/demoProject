@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    apiKey: REACT_APP_OPENAI_API_KEY,
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     dangerouslyAllowBrowser: true,
 });
 
